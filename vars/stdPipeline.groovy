@@ -43,6 +43,12 @@ def execute() {
           // Log the container execution output to Jenkins
         }
         
+        stage('Canary Release') {
+          // Use deployments, services and ingress resources to
+          // create a canary deployment in Kubernetes
+          // to validate new release.
+        }
+        
         stage('Release to Production') {
           // Calculate new version
           // Tag and push
