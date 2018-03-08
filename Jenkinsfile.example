@@ -1,0 +1,6 @@
+#!/bin/groovy
+@Library('stdPipeline') _
+import com.foo.*
+
+// Execute the pipeline
+stdPipeline.execute()
