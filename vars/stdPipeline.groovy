@@ -43,10 +43,16 @@ def execute() {
           // Log the container execution output to Jenkins
         }
         
-        stage('Version Release') {
+        stage('Release to Production') {
           // Calculate new version
           // Tag and push
           // Deploy and run the Docker container(s) in the production env
+        }
+        
+        stage('Release to Test Environment') {
+          // After validating the prod deploy,
+          // deploy to a test environment that
+          // dependent services can test against
         }
 
       }
